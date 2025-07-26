@@ -1,0 +1,376 @@
+*{
+    margin: 0 ;
+    font-family: Georgia, serif;
+    /* background-color: rgb(252, 245, 150); */
+}
+header{
+    background-color: rgb(252, 245, 150);
+    width: 100%;
+    height: 7vw;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid rgb(255, 156, 115);
+}
+.logonote{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logonote>h1{
+    color: rgb(255, 156, 115);
+}
+.logobtn{
+    height: 5vw;
+    border-radius: 50%;
+    margin: 0 1rem;
+}
+.note{
+    font-size: 2vw;
+}
+#logster{
+    margin-right: 2vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.logster{
+    text-decoration: none;
+    color: rgb(255, 69, 69);
+    font-weight: 600; 
+}
+.login,.register{
+    margin-left: 2vw;
+}
+.login:hover,.register:hover{
+    border: 0.5vw solid white;
+    background-color: aliceblue;
+    box-shadow: 0.2vw 0.3vw 0.4vw pink;
+    transition: border 0s ease-out;
+}
+@media(max-width:850px){
+    #logster{
+        flex-grow: 0.2;
+    }
+}
+@media(max-width:700px){
+    .logster{
+        font-size: 2vw;
+    }
+    header{
+        height: 9vw;
+    }
+}
+@media(max-width:350px){
+    .logster{
+        font-size: 3vw;
+    }
+    .login,.register{
+        padding: 0;
+    }
+     header{
+        height: 11vw;
+    }
+    
+}
+@media(min-width:1000px){
+    header{
+        height: 5vw;
+    }
+}
+@media(max-width:200px){
+    header{
+        height: 12vw;
+    }
+}
+
+/* main section */
+
+/*First poster*/
+
+
+@media(350px<=width<850px){
+    .firstposter{
+        height: 50vh;
+        width: 98vw;
+    }
+}
+@media(min-width:850px){
+    .firstposter{
+        height: 70vh;
+        width: 98vw;
+    }
+}
+@media(max-width:350px){
+    .firstposter{
+        height: 30vh;
+        width: 98vw;
+    }
+}
+@media(max-width:200px){
+    .firstposter{
+        height: 20vh;
+        width: 98vw;
+    }
+}
+.firstposter{
+    margin: 0;
+    padding: 0;
+    /* border-radius: 2%; */
+    border-radius: 15% 2% 15% 2%;
+}
+.webposter{
+    margin: 0;
+    box-sizing: content-box;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+.aboutus{
+    margin: 0;
+}
+body{
+    background-color: whitesmoke;
+}
+.glancefirst,.glancemain{
+    margin-left: 1vw;
+    margin-top: 7vw;
+    position: absolute;
+    height: 36vw;
+    width: 36vw;
+    padding: 2vw;
+    /* border: 0.5vw solid black; */
+    border-radius: 50%;
+    text-align: center;
+}
+.glancefirst{
+    /* background-color: red; */
+    color: rgb(250, 162, 56);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5vw solid rgb(250, 162, 56);
+    border-width: 1vw 0 1vw 0;
+    font-size: 8vw;
+    opacity: 1;
+    transition: opacity 1.5s ease 1.5s;
+}
+.glancemain{
+    background-color: green;
+    opacity: 0;
+    background-image: url('./pawlalogo/pawlamoto.jpg');
+    background-size: cover;
+    transition: opacity 3.5s ease-in-out 0.5s;
+}
+.aboutus{
+    height: 58vw;
+    border-radius: 0.5vw 0 0.5vw 0;
+    /* border: 1vw solid goldenrod; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(240,239,235,255);
+    transition: background-color 3.5s ease-in-out 0.5s;
+}
+.aboutustext{
+    position: absolute;
+    left: 43vw;
+    height: 50vw;
+    width: 48vw;
+    padding: 2.5vw;
+    /* border: 0.5vw solid black; */
+    text-align: center;
+}
+.aboutustextstart{
+    opacity: 1;
+    font-size: 10vw;
+    color:  rgb(250, 162, 56);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1s ease-in-out;
+    /* transition: opacity 3.5s ease-in-out 0.5s; */
+}
+.aboutustextmain{
+    font-size: 3vw;
+    color: rgb(241, 153, 45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 1.5s ease 1.5s;
+}
+.aboutus:hover .glancemain{
+    opacity: 0;
+
+}
+.aboutus:hover .glancefirst{
+    opacity: 1;
+}
+.aboutus:hover .aboutustextstart{
+    opacity: 0;
+
+}
+.aboutus:hover .aboutustextmain{
+    opacity: 1;
+}
+.aboutus:hover{
+    /* background-color: rgba(240,239,235,255); */
+    background-color: inherit;
+}
+.whypet{
+    height: 40vw;
+    width: 40vw;
+    border-radius: inherit;
+}
+#whypetdiv{
+    border: none;
+}
+.joinvolunteer{
+    height: 63vw;
+}
+.joinvolunteerboth{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.joinvolunteertext{
+    height: 40vw;
+    width: 47vw;
+    font-size: 3vw;
+    margin: 0;
+    padding: 0;
+}
+#joinvolunteerheading{
+    text-align: center;
+    font-size: 5vw;
+}
+ .joinvolunteerimg{
+    height: 42vw;
+    width: 42vw;
+    margin-top: 5vw;
+    background-image: url('./images/volunteering.jpg');
+    background-size: cover;
+    border-radius: 50%;
+}
+.reasonjoin>p,.processjoin>p{
+    color: rgb(249, 147, 3);
+}
+.reasonjoin>h3,.processjoin>h3{
+    color: rgb(10, 234, 167);
+}
+.volunteerbtn{
+    height: 5vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.secbtn{
+    width: 16vw;
+    padding: 0.75vw;
+    background-color: rgb(252, 245, 150);
+    color: rgb(226, 103, 8);
+    font-size: 1.5vw;
+    border: 0.3vw solid rgb(226, 103, 8);
+    border-radius: 8vw;                                                                       /* half of width*/
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out,width 0.3s ease-in-out,font-size 0.3s ease-in-out;
+}
+.secbtn:hover{
+    opacity: 1;
+    width: 17vw;
+    font-size: 2vw;
+}
+#joinvolunteerheading{
+    color: rgb(221, 215, 21);
+}
+.donate{
+    opacity: 0.8;
+}
+.donatebanner{
+    height: 55vw;
+    background-image: url('./images/donatebanner2.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.donatebanner>p{
+    color: white;
+    font-size: 9vw;
+    font-family: Luminari, fantasy;
+    box-shadow: 1vw 1vw 1vw black;
+}
+.donatebtn{
+    margin-top: 5vw;
+    opacity: 0.8;
+}
+.promotiondiv{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.promotion{
+    width: 70%;
+    height: auto;
+    border: 3vw solid rgb(226, 103, 8);
+    margin: 0;
+    padding: 0;
+}
+.divdist{
+    margin-bottom: 8vw;
+}
+.imgvdobtn{
+    margin-right: 3vw;
+    margin-bottom: 3vw;
+}
+.imgvdos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.mainfooter{
+    height: 15vw;
+    background-color: rgba(226, 103, 8,0.7);
+    display: flex;    
+    justify-content: space-around;
+    align-items: center;
+}
+.socialmedia h2{
+   font-size: 3vw;
+   color: rgba(0,0,0,0.8);
+}
+.socialmedia img{
+    height: 7vw;
+    margin: 1vw;
+}
+.footerlinks{
+    display: flex;    
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.footerlinks>a{
+    margin-bottom: 0.8vw;
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: rgba(0,0,0,0.8);
+}
+.lastfooter{
+    height: 3.5vw;
+    background-color: rgba(0,0,0,1);
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    word-spacing: 0.5vw;
+}
+.lastfooter>a{
+    font-size: 2vw;
+    text-decoration: none;
+    color: rgba(226, 103, 8,0.9);
+}
+.borderbox:hover{
+    border: 0.2vw solid white;
+    padding: 0.2vw;
+}
